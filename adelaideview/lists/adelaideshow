@@ -1,0 +1,19 @@
+function(head, req){
+    start({
+        'headers': {
+            'Content-Type': 'text/html'
+        }
+    });
+    send('<html><head><title>Adelaide Twitter Application</title></head><body><table>');
+    send('<tr><th>ID</th><th>Key</th><th>Value</th></tr>')
+    while(row = getRow()){
+        send(''.concat(
+            '<tr>',
+            '<td>' + row.id + '</td>',
+            '<td>' + row.key + '</td>',
+            '<td>' + row.value + '</td>',
+            '</tr>'
+        ));
+    }
+    send('</table></body></html>');
+}
