@@ -1,0 +1,21 @@
+
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/days_most_tweet?group_level=1
+
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/feelings
+
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/sourcetweet?group_level=1
+
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/trueorigin?group_level=1
+
+____________________________________________________________
+Feelings
+-Shows whether the tweet was positive(greater than 0) or negative (below 0)
+
+Day's tweet
+-Shows the days and the amount of english(no matter if is en-AUS, en or other) tweets for that day.
+
+Source Tweet
+-The source where the tweet was made it can be a webpage or phone (android or iphone) among other sources.
+
+True Origin
+-Check where the origin of the twitter account is from, excepting Adelaide.
