@@ -1,21 +1,32 @@
-
-http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/days_most_tweet?group_level=1
-
-http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/feelings
-
-http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/sourcetweet?group_level=1
-
-http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/trueorigin?group_level=1
-
-____________________________________________________________
 Feelings
 -Shows whether the tweet was positive(greater than 0) or negative (below 0)
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/feelings
 
 Day's tweet
--Shows the days and the amount of english(no matter if is en-AUS, en or other) tweets for that day.
+-Shows the days and the amount of english tweets for that day.
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/days_most_tweet?group_level=1
 
 Source Tweet
--The source where the tweet was made it can be a webpage or phone (android or iphone) among other sources.
+-The source where the tweet was made, it can be a webpage or phone (android or iphone) among other sources.
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/sourcetweet?group_level=1
 
 True Origin
 -Check where the origin of the twitter account is from, excepting Adelaide.
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaideview/_list/adelaideshow/trueorigin?group_level=1
+
+Religion
+-Shows for the positive and negative tweets the religion it belongs to
+http://146.118.97.29:5984/tweets_adelaide/_design/adelaide_sentiment/_list/adelaide/religion?group_level=2
+
+Sentiment Period
+-The positive and negative tweets: 
+(group level 1) amount
+  http://146.118.97.29:5984/tweets_adelaide/_design/adelaide_sentiment/_list/adelaide/sentiment_period?group_level=1
+group level 2 for a day (monday-sunday)
+  http://146.118.97.29:5984/tweets_adelaide/_design/adelaide_sentiment/_list/adelaide/sentiment_period?group_level=2
+(group level 3) for a day (monday-sunday) and time (0-23)
+  http://146.118.97.29:5984/tweets_adelaide/_design/adelaide_sentiment/_list/adelaide/sentiment_period?group_level=3
+(group level 4) for a day (monday-sunday), time (0-23) and a specific word
+  http://146.118.97.29:5984/tweets_adelaide/_design/adelaide_sentiment/_list/adelaide/sentiment_period?group_level=4
+
+
