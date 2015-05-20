@@ -5,7 +5,7 @@
 // David MONROY	(610346)
 // Jaime MARTINEZ	(642231)
 
-//This view is in charge of sentiment of a tweet as well as a religion that it might belong to.
+//This view is in charge of sentiment of a tweet as well as a religion that it might belong to plus a time and coordinates.
 function(doc) {
 	var username= doc.user.screen_name;
 	var coordinates= doc.coordinates.coordinates;
